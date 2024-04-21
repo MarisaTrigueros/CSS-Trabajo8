@@ -172,6 +172,7 @@ img{
     .cards{
         display: flex;
         flex-direction: column;
+        padding: 0px;
     }
 }
 

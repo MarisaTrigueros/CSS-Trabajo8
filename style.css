@@ -1,0 +1,183 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    flex-direction: row;
+    
+}
+
+.card{
+    width: 188px;
+    height: 380px;
+    background: linear-gradient(to bottom, #9b9e9ecf, #909393b0, #d5d7d7a6, #f9fafd);
+    display: grid;
+    grid-template-areas: 
+    "todosup none none"
+    "cat1 cat1 cat1"
+    "heart chat none"
+    "lorem1 none none";
+    border: 1px #d8dbdbbd solid;
+    border-radius: 20px ;
+    -webkit-box-shadow: 2px 11px 42px -17px rgba(74,73,74,0.85);
+    -moz-box-shadow: 2px 11px 42px -17px rgba(74,73,74,0.85);
+    box-shadow: 2px 5px 20px -10px rgba(74,73,74,0.85);
+
+}
+
+.todosup{
+    display: grid;
+    grid-template-areas: 
+    "circle nameDate point";
+}
+
+.nameDate{
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "date";
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.date{
+    grid-area: "date";
+    padding: 0px;
+    margin-left: -25px;
+    margin-top: -22px;
+    color: white;
+    font-size: 10px;
+}
+
+.name{
+    grid-area: "name";
+    font-size: 12px;
+    margin-left: -25px;
+    margin-top: 7px;
+}
+
+.circle{
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: white;
+    grid-area: "circle";
+}
+
+.point{
+    display: grid;
+    grid-area:"point";
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -35px;
+}
+
+.cat1{
+    width: 188px;
+    height: 164px;
+    grid-area: "cat1";    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -25px;
+} 
+
+.cat2{
+    width: 188px;
+    height: 164px;
+    grid-area: "cat1";    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -25px;
+} 
+
+.cat3{
+    width: 188px;
+    height: 164px;
+    grid-area: "cat1";    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -25px;
+} 
+
+img{
+    grid-area: "cat1";
+    width: 188px;
+    height: 164px;
+}
+
+.heartChat{
+    display: flex;
+    gap:10px;
+    padding-left: 10px;
+    margin-top: -15px;
+}
+
+.heart{
+    grid-area: "heart";
+}
+
+.chat{
+    grid-area:"chat";
+}
+
+.lorem1{
+    grid-area: "lorem1";
+    margin-top: -30px;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 100%;
+    display: flex;
+    text-align: justify;
+}
+
+/* corazon */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+/* burbuja chat */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 5,
+  'opsz' 24,
+}
+
+
+@media (max-width: 375px) {
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
